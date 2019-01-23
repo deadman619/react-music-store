@@ -11,9 +11,9 @@ body{
   background: var(--mainWhite) !important;
   color: var(--mainDark) !important;
 }
-.text-title{
+.text-title, .text-cart{
   font-family: 'Raleway', cursive;
-  letter-spacing: 0.3rem;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 .text-main{
@@ -21,4 +21,7 @@ body{
 }
 .text-secondary{
   color: var(--lightBlue);
+}
+.text-cart {
+  font-weight: 900
 }

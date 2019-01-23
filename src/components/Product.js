@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
-import {ProductCustomer} from "../context";
+import {ProductConsumer} from "../context";
 //PropTypes to set up what kind of data to expect for the object and throws an error if the wrong type was received
 import PropTypes from 'prop-types';
 
@@ -11,22 +11,24 @@ export class Product extends Component {
 		return (
 			<ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
 				<div className='card'>
-					<div className="img-container p-5" onClick={
-						console.log("Clicked")
-					}>
-						<Link to="/details">
-							<img src={img} alt="product" className='card-img-top' />
-						</Link>
-						<button className='cart-btn' disabled={inCart ? true : false} onClick={() =>{
-							console.log("Added to cart")
-						}}>
-						{inCart ? (
-							<p className='text-capitalize mb-0' disabled>in Cart</p>
-							) : (
-							<i className='fas fa-cart-plus' />
+					<ProductConsumer>
+						{value => (
+							<div className="img-container p-5" onClick={() => value.handleDetail(id)}>
+								<Link to="/details">
+									<img src={img} alt="product" className='card-img-top' />
+								</Link>
+								<button className='cart-btn' disabled={inCart ? true : false} onClick={() =>{
+									value.addToCart(id);
+								}}>
+								{inCart ? (
+									<p className='text-capitalize mb-0' disabled>in Cart</p>
+									) : (
+									<i className='fas fa-cart-plus' />
+								)}
+								</button>			
+							</div>
 						)}
-						</button>			
-					</div>
+					</ProductConsumer>
 					<div className="card-footer d-flex justify-content-between">
 						<p className='align-self-center mb-0'>
 							{title}
@@ -66,7 +68,8 @@ const ProductWrapper = styled.div`
 		height: 85px;
 	}
 	@media screen and (max-width: 767px) {
-		height: auto;	
+		height: auto;
+		font-size: 0.8em;	
 	}
 	background: transparent;
 	border-top: transparent;

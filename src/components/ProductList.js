@@ -22,7 +22,6 @@ export class ProductList extends Component {
 					</div>
 				</div>
 			</React.Fragment>
-			//<Product />
 		);
 	}
 }

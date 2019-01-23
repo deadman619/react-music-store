@@ -13,7 +13,8 @@ const ProductContext = React.createContext();
 class ProductProvider extends Component {
 	state ={
 		products: [],
-		detailProduct: detailProduct
+		detailProduct: detailProduct,
+		cart: []
 		//Call example: this.state.products[0].title
 	};
 
@@ -31,21 +32,47 @@ class ProductProvider extends Component {
 			tempProducts = [...tempProducts, singleItem];
 		})
 		this.setState(()=>{
-			return {products:tempProducts}
+			return {products:tempProducts};
 		});
 	};
-	handleDetail = () =>{
-		console.log("hello from brazil");
+	getItem = id =>{
+		const product = this.state.products.find(item => item.id === id);
+		return product;
+	}
+	handleDetail = id =>{
+		const product = this.getItem(id);
+		this.setState(()=>{
+			return {detailProduct:product};
+		})
 	};
-	addToCart = () =>{
-		console.log("hello vietnam");
+	addToCart = (id) =>{
+		let tempProducts = [...this.state.products];
+		const index = tempProducts.indexOf(this.getItem(id));
+		const product = tempProducts[index];
+		product.inCart = true;
+		product.count = 1;
+		const price = product.price;
+		product.total = price;
+		this.setState(()=>{
+			return {products:tempProducts, cart:[...this.state.cart, product]};
+		});
 	};
+	splitTracks(string) {
+		let tracks = string.split(',');
+		let trackList = [];
+		tracks.map((track) => {
+			let singleTrack = <h5 className='text-title text-uppercase text-muted mt-3 mb-2'>{track}</h5>;
+			trackList.push(singleTrack);
+		})
+		return trackList;
+	}
 	render() {	
 		return (
 			<ProductContext.Provider value={{
 				...this.state,
 				handleDetail:this.handleDetail,
-				addToCart:this.addToCart
+				addToCart:this.addToCart,
+				splitTracks:this.splitTracks
 			}}>
 				{this.props.children}
 			</ProductContext.Provider>

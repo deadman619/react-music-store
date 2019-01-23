@@ -16,7 +16,7 @@ export class Navbar extends Component {
 					</li>
 				</ul>
 				<Link to='/cart' className='ml-auto'>
-					<ButtonContainer className='btn btn-outline-danger'><i className="fas fa-cart-plus"> My cart</i></ButtonContainer>
+					<ButtonContainer className='btn btn-outline-danger'><span className='text-cart'>My cart</span></ButtonContainer>
 				</Link>
 			</NavWrapper>
 		);
@@ -27,7 +27,7 @@ export class Navbar extends Component {
 
 const ButtonContainer = styled.button`
 text-transform: capitalize;
-font-size: 1.2em;
+font-size: 1em;
 `;
 
 const NavWrapper = styled.nav`
