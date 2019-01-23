@@ -6,7 +6,7 @@ import {detailProduct} from '../data';
 
 export class Details extends Component {
 	splitTracks(string) {
-		let tracks = string.split('\n');
+		let tracks = string.split(',');
 		let trackList = [];
 		tracks.map((track) => {
 			console.log(track);
@@ -34,7 +34,6 @@ export class Details extends Component {
 								<div className="col-10 mx-auto col-md-6 my-3 text-capitalize text-center">
 									<h2>Artist: {artist}</h2>
 										{this.splitTracks(info)}
-									{/* <h4 className='text-title text-uppercase text-muted mt-3 mb-2'></h4>*/}
 								</div>
 							</div>
 						</div>

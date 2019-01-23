@@ -11,7 +11,7 @@ export const storeProducts = [
     price: 9.99,
     artist: "Florence + the Machine",
     info:
-      "1.  Dogs Days Are Over  4:14 2.  Rabbit Heart (Raise It Up)  3:54 3.  I'm Not Calling You a Liar  3:07 4.  Howl  3:36",
+      "1.  Dogs Days Are Over  4:14, 2.  Rabbit Heart (Raise It Up)  3:54, 3.  I'm Not Calling You a Liar  3:07, 4.  Howl  3:36 , 5.  Kiss with a Fist  2:06, 6.  Girl with One Eye 3:40, 7.  Drumming Song 3:45, 8.  Between Two Lungs 4:11, 9.  Cosmic Love 4:17, 10. My Boy Builds Coffins 2:58, 11. Hurricane Drunk 3:15, 12. Blinding  4:42, 13. You've Got the Love 2:48",
     inCart: false,
     count: 0,
     total: 0
@@ -109,7 +109,7 @@ export const detailProduct = {
     price: 9.99,
     artist: "Florence + the Machine",
     info: 
-      "1.  Dogs Days Are Over  4:14\n 2.  Rabbit Heart (Raise It Up)  3:54\n 3.  I'm Not Calling You a Liar  3:07 \n 4.  Howl  3:36 \n 5.  Kiss with a Fist  2:06 \n 6.  Girl with One Eye 3:40 \n 7.  Drumming Song 3:45 \n 8.  Between Two Lungs 4:11 \n 9.  Cosmic Love 4:17 \n 10. My Boy Builds Coffins 2:58 \n 11. Hurricane Drunk 3:15 \n 12. Blinding  4:42 \n 13. You've Got the Love 2:48",
+      "1.  Dogs Days Are Over  4:14, 2.  Rabbit Heart (Raise It Up)  3:54, 3.  I'm Not Calling You a Liar  3:07, 4.  Howl  3:36 , 5.  Kiss with a Fist  2:06, 6.  Girl with One Eye 3:40, 7.  Drumming Song 3:45, 8.  Between Two Lungs 4:11, 9.  Cosmic Love 4:17, 10. My Boy Builds Coffins 2:58, 11. Hurricane Drunk 3:15, 12. Blinding  4:42, 13. You've Got the Love 2:48",
     inCart: false,
     count: 0,
     total: 0
