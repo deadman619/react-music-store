@@ -31,7 +31,7 @@ export class Product extends Component {
 						<p className='align-self-center mb-0'>
 							{title}
 						</p>
-						<h5 className='text-red font-italic mb-0'>
+						<h5 className='font-italic mb-0'>
 							{price}<span className='ml-1'>€</span>
 						</h5>
 					</div>
@@ -61,6 +61,13 @@ const ProductWrapper = styled.div`
 	transition: all 1s linear;
 }
 .card-footer{
+	height: 50px;
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		height: 85px;
+	}
+	@media screen and (max-width: 767px) {
+		height: auto;	
+	}
 	background: transparent;
 	border-top: transparent;
 	transition: all 1s linear;
