@@ -23,7 +23,7 @@ export class Navbar extends Component {
 	}
 }
 
-// npm install --save styled-components  -  Library that lets you make custom css styled components/tags like below
+// npm i styled-components  -  Library that lets you make custom css styled components/tags like below
 
 const ButtonContainer = styled.button`
 text-transform: capitalize;

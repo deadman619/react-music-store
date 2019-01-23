@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Live version is available to view at http://deadmantest.000webhostapp.com/
+Live version is available to view at https://react-music-store-app.herokuapp.com/
 
 ## Available Scripts
 

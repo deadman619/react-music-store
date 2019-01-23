@@ -1,6 +1,5 @@
 import React from 'react';
 
-// Title generator function, export default means you don't need to use {} on the import
 export default function Title({name, title}) {
 	return (
 		<div className='row'>

@@ -19,3 +19,22 @@ body{
 .text-cart {
   font-weight: 900;
 }
+.cartText {
+  margin-top: 5em;
+}
+@media screen and (max-width: 991px) {
+  .cartText {
+    margin-top: 2em;
+  }
+}
+.quantity{
+  margin: 0 2em;
+}
+.quantity:hover{
+  cursor: pointer;
+  color: var(--mainRed);
+}
+.close {
+  float: none !important;
+  color:var(--mainRed) !important;
+}

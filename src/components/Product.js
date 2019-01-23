@@ -15,7 +15,7 @@ export class Product extends Component {
 						{value => (
 							<div className="img-container p-5" onClick={() => value.handleDetail(id)}>
 								<Link to="/details">
-									<img src={img} alt="product" className='card-img-top' />
+									<img src={img} alt="albumCover" className='card-img-top' />
 								</Link>
 								<button className={inCart ? 'inCart-btn' : 'cart-btn'} disabled={inCart ? true : false} onClick={() =>{
 									value.addToCart(id);
@@ -43,7 +43,7 @@ export class Product extends Component {
 	}
 }
 
-//We define the expected datatype for the object and make it throw out an error if the received data types aren't accurate
+// Expected datatype for the object, throws out an error if the received data types aren't accurate
 Product.propTypes = {
 	product:PropTypes.shape({
 		id:PropTypes.number,

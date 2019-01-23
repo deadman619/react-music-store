@@ -1,8 +1,3 @@
-/* 
-https://www.iconfinder.com/icons/1243689/call_phone_icon
-Creative Commons (Attribution 3.0 Unported);
-https://www.iconfinder.com/Makoto_msk */
-
 export const storeProducts = [
   {
     id: 1,
@@ -11,7 +6,7 @@ export const storeProducts = [
     price: 9.99,
     artist: "Florence + the Machine",
     info:
-      "1.  Dogs Days Are Over  4:14, 2.  Rabbit Heart (Raise It Up)  3:54, 3.  I'm Not Calling You a Liar  3:07, 4.  Howl  3:36 , 5.  Kiss with a Fist  2:06, 6.  Girl with One Eye 3:40, 7.  Drumming Song 3:45, 8.  Between Two Lungs 4:11, 9.  Cosmic Love 4:17, 10. My Boy Builds Coffins 2:58, 11. Hurricane Drunk 3:15, 12. Blinding  4:42, 13. You've Got the Love 2:48",
+    "1. Only If For A Night    4:59, 2. Shake It Out    4:38, 3. What The Water Gave Me  5:33, 4. Never Let Me Go 4:31, 5. Breaking Down   3:49, 6. Lover To Lover  4:03, 7. No Light, No Light  4:35, 8. Seven Devils    5:03, 9. Heartlines  5:02, 10. Spectrum    5:12, 11. All This And Heaven Too 4:06, 12. Leave My Body   4:35",
     inCart: false,
     count: 0,
     total: 0
@@ -93,7 +88,7 @@ export const storeProducts = [
     title: "In the Aeroplane Over the Sea",
     img: "img/ITAOTS.png",
     price: 14.99,
-    artist: "Neural Milk Hotel",
+    artist: "Neutral Milk Hotel",
     info: 
     "1. The King of Carrot Flowers Pt. One 2:00, 2.  The King of Carrot Flowers Pts. Two & Three 3:06, 3.  In the Aeroplane Over the Sea 3:22, 4.  Two-Headed Boy  4:26, 5. The Fool 1:53, 6.  Holland 1945 3:15, 7.  Communist Daughter  1:57, 8.  Oh Comely 8:18, 9.  Ghost 4:08, 10. Untitled  2:16, 11. Two-Headed Boy Pt. Two 5:13",
     inCart: false,
@@ -109,7 +104,7 @@ export const detailProduct = {
     price: 9.99,
     artist: "Florence + the Machine",
     info: 
-      "1.  Dogs Days Are Over  4:14, 2.  Rabbit Heart (Raise It Up)  3:54, 3.  I'm Not Calling You a Liar  3:07, 4.  Howl  3:36 , 5.  Kiss with a Fist  2:06, 6.  Girl with One Eye 3:40, 7.  Drumming Song 3:45, 8.  Between Two Lungs 4:11, 9.  Cosmic Love 4:17, 10. My Boy Builds Coffins 2:58, 11. Hurricane Drunk 3:15, 12. Blinding  4:42, 13. You've Got the Love 2:48",
+    "1. Only If For A Night    4:59, 2. Shake It Out    4:38, 3. What The Water Gave Me  5:33, 4. Never Let Me Go 4:31, 5. Breaking Down   3:49, 6. Lover To Lover  4:03, 7. No Light, No Light  4:35, 8. Seven Devils    5:03, 9. Heartlines  5:02, 10. Spectrum    5:12, 11. All This And Heaven Too 4:06, 12. Leave My Body   4:35",
     inCart: false,
     count: 0,
     total: 0
