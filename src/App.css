@@ -4,7 +4,7 @@
   --mainWhite: #f3f3f3;
   --mainDark: #232528;
   --mainYellow: #ffa400;
-  --mainRed: #cc0000;
+  --mainRed: #dc3545;
 }
 body{
   font-family: 'Montserrat', sans-serif !important;
@@ -16,12 +16,6 @@ body{
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
-.text-main{
-  color: var(--mainBlue);
-}
-.text-secondary{
-  color: var(--lightBlue);
-}
 .text-cart {
-  font-weight: 900
+  font-weight: 900;
 }

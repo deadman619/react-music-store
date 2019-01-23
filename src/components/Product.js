@@ -17,11 +17,11 @@ export class Product extends Component {
 								<Link to="/details">
 									<img src={img} alt="product" className='card-img-top' />
 								</Link>
-								<button className='cart-btn' disabled={inCart ? true : false} onClick={() =>{
+								<button className={inCart ? 'inCart-btn' : 'cart-btn'} disabled={inCart ? true : false} onClick={() =>{
 									value.addToCart(id);
 								}}>
 								{inCart ? (
-									<p className='text-capitalize mb-0' disabled>in Cart</p>
+									<p className='text-capitalize mb-0'>In Cart</p>
 									) : (
 									<i className='fas fa-cart-plus' />
 								)}
@@ -97,7 +97,7 @@ const ProductWrapper = styled.div`
 .img-container:hover .card-img-top{
 	transform: scale(1.2);
 }
-.cart-btn{
+.cart-btn, .inCart-btn{
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -110,11 +110,14 @@ const ProductWrapper = styled.div`
 	opacity: 0;
 	transition: all 1s linear;
 }
-.img-container:hover .cart-btn{
+.img-container:hover .cart-btn, .inCart-btn{
 	opacity: 1;
 }
 .cart-btn:hover{
 	cursor: pointer;
 	color:var(--mainDark);
+}
+.inCart-btn:hover{
+	color: #fff;
 }
 `
